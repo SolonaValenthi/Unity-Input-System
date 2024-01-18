@@ -223,7 +223,7 @@ public partial class @PlayerInputActions: IInputActionCollection2, IDisposable
                 {
                     ""name"": ""Button"",
                     ""id"": ""2b5f3c16-786e-4478-8c8a-61950d886ac8"",
-                    ""path"": ""<Keyboard>/d"",
+                    ""path"": ""<Keyboard>/r"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
