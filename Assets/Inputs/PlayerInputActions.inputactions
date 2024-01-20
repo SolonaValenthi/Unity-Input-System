@@ -1,14 +1,84 @@
 {
-    "name": "PlayerActions",
+    "name": "PlayerInputActions",
     "maps": [
         {
             "name": "Player",
-            "id": "3de64b93-f986-43fc-a388-d6e71d624329",
+            "id": "36a8d83b-b67c-4630-8484-dc9e635ca8bd",
+            "actions": [
+                {
+                    "name": "Randomise Color",
+                    "type": "Button",
+                    "id": "ccb21dfc-9cda-402b-974c-25fc6cd65e78",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Rotate",
+                    "type": "Value",
+                    "id": "c833cecf-b14a-4f32-a06a-e75a500f97bb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "04ec4016-c10c-4871-9172-b5af3dd36136",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Randomise Color",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "1D Axis",
+                    "id": "fb8637c6-b58f-4d17-b966-416c202244dd",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "75cb1ef7-ef38-4176-a45f-d9cda9d11d0f",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "1cf1f320-3ab3-4322-a1e8-1874f90f74aa",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Rotate",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                }
+            ]
+        },
+        {
+            "name": "Driving",
+            "id": "327ec9c0-b5eb-4669-8f90-1a6457035687",
             "actions": [
                 {
                     "name": "Movement",
                     "type": "Value",
-                    "id": "6a00a409-b7a2-4068-b2c7-b01f58d01800",
+                    "id": "5379c3e8-66d8-4965-b6c9-3d2f84bdea85",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
@@ -18,7 +88,7 @@
             "bindings": [
                 {
                     "name": "WASD",
-                    "id": "5147e528-a383-40bc-a222-6eda60a35b0f",
+                    "id": "987652ff-4046-4924-a90b-fbaf9e10dc9e",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -29,7 +99,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "6d002a73-2d31-4565-aa7f-251728e4c85a",
+                    "id": "2a5d4027-ad1e-4c2c-b799-2e2f8a39f815",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -40,7 +110,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "7fd477f2-0ca3-4003-9bf3-b93996823a0c",
+                    "id": "b3f14a4f-ce28-411a-b738-cac0b43c357f",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -51,7 +121,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "4c5dd644-d786-48b1-96ac-0353619b6fb1",
+                    "id": "a5a5af28-183f-48e7-b1d3-fb5d5667a14a",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -62,7 +132,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "7c3df848-7189-4244-907c-aa343a97b791",
+                    "id": "75745ac9-735a-404a-9f0d-6d93a13eafad",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
